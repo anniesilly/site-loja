@@ -139,23 +139,69 @@ h2 {
 /*estilo das imagens*/
 .produto img, .cd img{
     width: 100%;
-
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 6px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease;
 }
 
-.btn-cd:hover{
-    transition: 0.3s ease;
+.produto img :hover, .cd img :hover { transform: scale(1.05);}
+
+/*botões*/
+.btn-shop, .btn, .btn-cd {
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-radius: 30px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.btn-shop {
+    background-color: #c1ff72;
+    padding: 12px 30px;
+    color: #9900ff;
+    margin-top: 20px;
+}
+
+.btn {
     background-color: rgba(217, 122, 255, 0.5);
-    
+    padding: 10px 20px;
+    color: white;
+    margin-top: 15px;
+    width: 100%;
+}
+
+.btn-cd {
+    background-color: #c1ff72;
+    padding: 8px 15px;
+    color: black;
+    margin-top: 10px;
+    font-size: 0.9rem;
+}
+
+.btn-shop:hover, .btn-cd:hover {
+    background-color: white;
+    color: black;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(193, 255, 114, 0.4);
+}
+
+.btn:hover {
+    background-color: #d365ff;
+    color: white;
 }
 
 footer {
-    background-color: #1a1a1a;
+    color: #666;
     text-align: center;
-    padding: 20px;
-    margin-top: 50px;
+    padding: 40px;
 }
 
-footer p {
-    font-size: 1rem;
-    color: #888;
+@media (max-width: 900px) {
+    .catalogo-grid
+    { grid-template-columns: repeat(2, 1fr); }
+    .hero-title { font-size: 2.5rem; }
 }
