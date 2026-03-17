@@ -10,20 +10,19 @@ body {
     background-color: #3f3f3f;
     color: white;
     line-height: 1.6;
-    padding-top: 100px;
     scroll-behavior: smooth; 
     
 }
 
 header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
     background-color: #c1ff72;
-    padding: 2px;
-    text-align: justify;
-    position: fixed;
-    width: 100%;
+    position: sticky;
     top: 0;
     z-index: 100;
-    
 }
 
 h1{
@@ -46,8 +45,7 @@ h1{
 header, nav ul {
     list-style: none;
     display: flex;
-    justify-content: space-between;
-    padding: 1rem;
+    gap: 20px;
 }
 
 nav ul li {
@@ -58,10 +56,13 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     color: black;
-    font-size: 1.2rem;
-    letter-spacing: 1px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
+.menu a:hover{
+    color: gray;
+}
 
 .hero {
     background: url('imagens/') no-repeat center center/cover;
@@ -95,6 +96,11 @@ nav ul li a {
     margin-top: 20px;
     font-weight: bold;
     text-transform: uppercase;
+}
+
+#destaques{
+    padding-top: 150px;
+    margin-top: -150px;
 }
 
 .btn-shop:hover{
