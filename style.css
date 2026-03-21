@@ -100,7 +100,7 @@ nav ul li a {
     text-transform: uppercase;
 }
 
-#destaques{
+.destaques{
     padding-top: 150px;
     margin-top: -150px;
 }
@@ -128,14 +128,13 @@ nav ul li a {
 
 .produto-grid {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 20px;
 }
 
 .produto {
     background-color: #333;
     padding: 20px;
-    text-align: center;
     width: 30%;
     border-radius: 10px;
     transition: transform 0.3s ease;
@@ -155,12 +154,14 @@ nav ul li a {
     font-size: 1.2rem;
     margin-top: 10px;
     padding: 5px;
+    text-align: center;
 }
 
 .produto p {
     font-size: 1.1rem;
     margin-top: 5px;
     padding: 10px;
+    text-align: center;
 }
 
 .btn {
@@ -170,6 +171,7 @@ nav ul li a {
     text-decoration: none;
     margin-top: 20px;
     font-weight: bold;
+    text-align: center;
 }
 
 .btn:hover{
@@ -179,7 +181,7 @@ nav ul li a {
 }
 
 .catalogo {
-    padding: 50px 10%;
+    padding: 40px ;
     background-color: #1a1a1a;
 }
 
@@ -193,16 +195,18 @@ nav ul li a {
 
 .catalogo-grid {
     display: flex;
-    justify-content: space-between;
-    gap: 20px;
+    justify-content: space-around;
+    gap: 80px;
 }
 
 .cd {
-    padding: 20px;
+    
     text-align: center;
-    width: 30%;
+    width: 50%;
+    height: 50%;
     border-radius: 10px;
     transition: transform 0.3s ease;
+    
 }
 
 .cd:hover {
@@ -211,18 +215,19 @@ nav ul li a {
 
 .cd img {
     width: 100%;
-    height: auto;
+    height: 100%;
     border-radius: 5px;
+    position: relative;
 }
 
 .cd h3 {
     font-size: 1.2rem;
-    margin-top: 10px;
+    margin: 10px;
 }
 
 .cd p {
     font-size: 1.1rem;
-    margin-top: 5px;
+    margin: 5px;
 }
 
 .btn-cd {
