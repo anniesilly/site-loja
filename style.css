@@ -54,7 +54,7 @@ nav ul li a {
 /*hero section*/
 .hero {
     height: 70vh;
-    background: url('imagens/asfalt-dark.png') repeat;
+    background: url('imagens/estrelas.gif') repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,6 +106,12 @@ nav ul li a {
 
 /*grids e produtos*/
 section { padding: 60px 5%;}
+
+[id="destaques"] {
+    background: #C1FF72;
+    background: linear-gradient(0deg, rgba(193, 255, 114, 0.54) 0%, rgba(11, 64, 36, 0.65) 31%, rgba(0, 0, 0, 0.88) 81%);
+    width: 100%;
+}
 
 h2 {
     text-align: center;
@@ -176,7 +182,7 @@ h2 {
 }
 
 .btn {
-    background-color: rgba(217, 122, 255, 0.5);
+    background-color: rgba(206, 86, 253, 0.5);
     padding: 10px 20px;
     color: white;
     margin-top: 15px;
