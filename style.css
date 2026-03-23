@@ -54,7 +54,7 @@ nav ul li a {
 /*hero section*/
 .hero {
     height: 70vh;
-    background: linear-gradient(rgba(0,0,0,0.5)), rgba(0, 0, 0, 0.5), url('imagens/asfalt-dark.png') repeat;
+    background: url('imagens/asfalt-dark.png') repeat;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -66,6 +66,12 @@ nav ul li a {
     color: transparent;
     -webkit-text-stroke: 2px #c1ff72;
     text-transform: uppercase;
+}
+
+.hero p {
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: italic;
 }
 
 .hero-title span{
@@ -124,6 +130,7 @@ h2 {
     width: 350px;
 }
 
+.produto h3 { font-size: 1.8rem;}
 
 /*catalogo*/
 .catalogo-grid {
@@ -135,6 +142,8 @@ h2 {
 }
 
 .cd { text-align: center;}
+
+.cd h3 { font-size: 1.1rem; }
 
 /*estilo das imagens*/
 .produto img, .cd img{
@@ -200,6 +209,7 @@ footer {
     padding: 40px;
 }
 
+/*responsividade*/
 @media (max-width: 900px) {
     .catalogo-grid
     { grid-template-columns: repeat(2, 1fr); }
